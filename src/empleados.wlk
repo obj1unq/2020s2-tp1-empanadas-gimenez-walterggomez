@@ -1,29 +1,33 @@
 object galvan{
 	var sueldo = 15000
-	method cambiarSueldo(nuevoSueldo){
+	
+	method sueldo(nuevoSueldo){
 		sueldo = nuevoSueldo
 	}
-	method cobrarSueldo(){		
+	method sueldo(){		
 		return sueldo
 	}	
 }
 object baigorria{
-	var sueldoGal = 0	
-	const valorEmpanada = 15
-	var cantidadDeEmpVend= 0
+	var sueldo= 0	
+	const valorEmpanada = 15	
 	
-	method calculoDeSueldo(cantEmpanada){
-		sueldoGal= cantEmpanada * valorEmpanada		
+	method sueldo(){
+		return sueldo		
 	}
-	method cobrarSueldo(){
-		return sueldoGal		
-	}
-	method empanadasVendidas(cantidad){
-		cantidadDeEmpVend = cantidadDeEmpVend + cantidad
-	}
-	method cantidadDeEmpVendidas(){
-		return cantidadDeEmpVend
-	}
-	
-	
+	method vender(cantidad){
+		sueldo= sueldo + cantidad * valorEmpanada	
+	}	
 }
+
+object gimenez{
+	var fondo = 300000
+	
+	method pagarSueldo(empleado){
+		fondo = fondo- empleado.sueldo()
+	}
+	method fondo(){
+		return fondo
+	}	
+}
+
