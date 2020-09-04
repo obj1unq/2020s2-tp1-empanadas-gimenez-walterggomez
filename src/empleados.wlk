@@ -48,13 +48,11 @@ object galvan{
 	}
 }
 
-
 object baigorria{
 	var sueldo= 0
 	var totalCobrado = 0
 	const valorEmpanada = 15
 		
-	
 	method sueldo(){
 		return sueldo		
 	}
@@ -75,6 +73,7 @@ object baigorria{
 		
 	}
 }
+
 object gimenez{
 	var fondo = 300000
 		
@@ -90,4 +89,3 @@ object gimenez{
 		return fondo
 	}	
 }
-
